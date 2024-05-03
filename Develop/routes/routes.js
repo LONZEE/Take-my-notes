@@ -21,7 +21,7 @@ routes.post('/api/notes', (req, res) => {
   const newNote = {
     title: req.body.title,
     text: req.body.text,
-    id: uuid(),
+    id: uuidv4(),
   };
   dbJson.push(newNote);
   writeDbJson(dbJson);

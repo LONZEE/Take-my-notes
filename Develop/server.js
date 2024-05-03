@@ -7,5 +7,5 @@ app.use(express.static('public'));
 app.use(routes);
 
 app.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
+  console.log(`Server is listening on port http://localhost:${port}`);
 });

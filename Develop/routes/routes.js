@@ -1,6 +1,6 @@
 const routes = require('express').Router();
 const fs = require('fs');
-const uuid  = require('uuid');
+const { v4: uuidv4 } = require('uuid');
 const path = require('path');
 const readDbJson = () => JSON.parse(fs.readFileSync('db/db.json', 'utf8'));
 

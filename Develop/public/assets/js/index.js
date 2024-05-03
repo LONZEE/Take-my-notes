@@ -189,6 +189,14 @@ if (window.location.pathname === '/notes') {
   newNoteBtn.addEventListener('click', handleNewNoteView);
   clearBtn.addEventListener('click', renderActiveNote);
   noteForm.addEventListener('input', handleRenderBtns);
+
+  document.addEventListener('keydown',function(event){
+    if(event.key === "Enter"){
+      event.preventDefault();
+      handleNoteSave();
+    }
+  
+} );
 }
 
 getAndRenderNotes();
